@@ -26,6 +26,6 @@ app.post("/createUser", async (req, res) => {
   res.json(user);
 });
 
-app.listen(3000, () => {
+app.listen(3002, () => {
   console.log("SERVER RUNS PERFECTLY!");
 });
