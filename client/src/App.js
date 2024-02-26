@@ -1,70 +1,33 @@
 import './App.css';
-import { useState, useEffect } from "react";
-import Axios from "axios";
+import{ BrowserRouter as Router, Routes, Route, }  from "react-router-dom"; 
+import { Home } from "./pages/home";
+import { Register } from "./pages/register";
+import { Signin} from "./pages/signin";
+import { CreatePost } from "./pages/createPost";
+import { UpdatePost } from "./pages/updatePost";
+import { DeletePost } from "./pages/deletePost";
+import { ReadPosts } from "./pages/readPosts";
+import { Navbar } from "./components/navbar";
+
 
 function App() {
-  const[listOfUsers, setListOfUsers] = useState([]);
-  const [name, setName] = useState("");
-  const [age, setAge] = useState(0);
-  const [username, setUsername] = useState("");
-  
-  useEffect(() => {
-    Axios.get("http://localhost:3002/getUsers").then((response) => {
-      setListOfUsers(response.data);
-    });
-  }, []);
-
-  const createUser = () => {
-    Axios.post("http://localhost:3002/createUser", {
-      name,
-      age, 
-      username,
-    }).then((response) => {
-      alert("USER CREATED");
-    });
-  };
-
   return ( 
-    <div className="App">
-      <div className="usersDisplay">
-        {listOfUsers.map((user) => {
-          return (
-          <div>
-            <h1>Name: {user.name}</h1>
-            <h1>Age: {user.age}</h1>
-            <h1>Username: {user.username}</h1>
-          </div>
-          
-          );
-        })}
-      </div>
-
-      <div>
-        <input 
-          type="text" 
-          placeholder="Name..." 
-          onChange={(event) => {
-            setName(event.target.value);
-         }}
-      />
-      <input 
-          type="number" 
-          placeholder="Age..." 
-          onChange={(event) => {
-            setAge(event.target.value);
-         }}
-      />
-      <input 
-          type="text" 
-          placeholder="Username..." 
-          onChange={(event) => {
-            setUsername(event.target.value);
-         }}
-      />
-        <button onClick={createUser}> Create User </button>
-      </div>
-    </div>
+  <div className="App">
+    <Router> 
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/createPost" element={<CreatePost/>} />
+        <Route path="/updatePost" element={<UpdatePost />} />
+        <Route path="/deletePost" element={<DeletePost />} />
+        <Route path="/readPosts" element={<ReadPosts />} />
+     </Routes>
+    </Router>
+  </div>
   );
 }
+
 
 export default App;
