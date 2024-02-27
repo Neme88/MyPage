@@ -21,8 +21,8 @@ router.post('/', async (req, res) => {
     }
 
     // Password is correct, generate JWT token
-    const token = user.generateAuthToken();
-    res.json({ message: 'Login successful.', token });
+    const token = user.generateAuthToken({id: user.id}, "secret" );
+    res.json({ token, userID: user._id, message: 'Login successful.' });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Server error' });
