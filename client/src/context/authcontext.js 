@@ -1,0 +1,42 @@
+import React, { createContext, useState, useEffect } from 'react';
+import { useHistory, useNavigate } from 'react-router-dom';
+
+const AuthContext = createContext();
+
+const AuthProvider = ({ children }) => {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const history = useHistory();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Check if the user is authenticated (e.g., by checking JWT token)
+    const token = localStorage.getItem('token');
+    if (token) {
+      // Here, you could verify the token's validity before setting isAuthenticated to true
+      setIsAuthenticated(true);
+    } else {
+      setIsAuthenticated(false);
+    }
+  }, []);
+
+  const login = (token) => {
+    localStorage.setItem('token', token);
+    setIsAuthenticated(true);
+    navigate('/');
+  };
+
+  const logout = () => {
+    localStorage.removeItem('token');
+    setIsAuthenticated(false);
+    navigate('/signin');
+  };
+
+  return (
+    <AuthContext.Provider value={{ isAuthenticated, login, logout }}>
+      {children}
+    </AuthContext.Provider>
+  );
+};
+
+export { AuthContext, AuthProvider };
+
