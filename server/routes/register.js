@@ -2,6 +2,7 @@
 
 const router = require('express').Router();
 const bcrypt = require('bcrypt');
+const BlogPost = require('../models/blogPostSchema');
 const UserModel = require('../models/Users');
 
 router.post('/', async (req, res) => {

@@ -15,16 +15,14 @@ export const Navbar = () => {
         <div className="navbar">
             <Link to="/">Home</Link>
             <Link to="/register">Register</Link>
-            <Link to="/signin">Signin</Link>
-            <Link to="/createPost">Create Post</Link>
-            <Link to="/updatePost">Update Post</Link>
-            <Link to="/deletePost">Delete Post</Link>
-            <Link to="/readPosts">Read Posts</Link>
+            <Link to="/posts/create">Create Post</Link>
+            <Link to="/posts/savedPosts">Saved Posts</Link>
+            <Link to="/posts/singlePost/:postId">View Post</Link>
             {!cookies.access_token ? (
-        <Link to="/signin">Signin</Link>
-      ) : (
-        <button onClick={signout}> Signout </button>
-      )}
+              <Link to="/signin"> Signin </Link>
+              ) : (
+              <button onClick={signout}> Signout </button>
+           )}
         </div>
-    );
-};
+      );
+  };

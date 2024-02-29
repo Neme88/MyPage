@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
@@ -29,6 +30,10 @@ const userSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+  savedPosts:[{
+    type: mongoose.Schema.Types.ObjectId, 
+    ref: "BlogPosts"
+  }]
 });
 
 // Hash password before saving to the database

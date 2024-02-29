@@ -16,25 +16,19 @@ mongoose.connect( "mongodb+srv://ccnwaka1988:YN8Hg6PhDme4HQI6@mypagedb0.arn4ch4.
  
 
 // Import endpoints
-
  const signinRoute = require('./routes/signin');
  const registerRoute = require('./routes/register');
- const createPostRouter = require('./routes/createPost');
- const readPostsRouter = require('./routes/readPosts');
- const postByIdRoute = require('./routes/readPosts');
- const updatePostRouter = require('./routes/updatePost');
- const deletePostRouter = require('./routes/deletePost');
+ const postsRoute = require('./routes/posts');
+ 
  
  
  // Use endpoints
 
 app.use('/signin', signinRoute);
 app.use('/register', registerRoute);
-app.use('/createPost', createPostRouter);
-app.use('/readPosts', readPostsRouter);
-app.use('/readPosts', postByIdRoute);
-app.use('/updatePost', updatePostRouter);
-app.use('/deletePost', deletePostRouter);
+app.use('/posts', postsRoute);
+
+
 
 app.listen(3002, () => {
   console.log("SERVER RUNS PERFECTLY!");
