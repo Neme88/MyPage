@@ -28,12 +28,12 @@ A personal blogging application built with Node.js and Express that allows user 
       npm init -y
       ```
    3. #### List of Dependecies:
-      i. express: Fast web framework for Node.js
-      ii. Mongoose: Object modeling tool, designed to work in asynchtonous environment
-      iii. jsonwebtoken: JSON Web Token for Authentication, Authorization, Information Exchange, Statless session
-      iv. bcrytjs: Library for hashing passwords in Node.js
-      v. cors: Node.js middleware for Enabling CORS(Cross Origin Resourse Sharing)
-      vi. dotenv: Loads Environment variables from a .env file into process.env.
+      - express: Fast web framework for Node.js
+      - Mongoose: Object modeling tool, designed to work in asynchtonous environment
+      - jsonwebtoken: JSON Web Token for Authentication, Authorization, Information Exchange, Statless session
+      - bcrytjs: Library for hashing passwords in Node.js
+      - cors: Node.js middleware for Enabling CORS(Cross Origin Resourse Sharing)
+      - dotenv: Loads Environment variables from a .env file into process.env.
 
    4. #### Install Dependecies:
       ```bash
