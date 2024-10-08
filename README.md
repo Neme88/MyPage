@@ -109,7 +109,7 @@ A personal blogging application built with Node.js and Express that allows user 
       - npm (dependency management)
 
 
-   10. ## API Endpoints
+   10. ### API Endpoints
 
 
    #### Authentication
