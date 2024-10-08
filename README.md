@@ -11,7 +11,15 @@ A personal blogging application built with Node.js and Express that allows user 
 
 
 ### Prerequisites
-- Node.js 
+- Node.js 20.x
+- Express 5.0
+- React 18.x
+- MongoDB 8.0
+
+### Installation
+
+   1. Clone the repository
+   git clone https://github.com/Neme88/MyPage.git
 
 
 
