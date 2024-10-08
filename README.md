@@ -91,7 +91,24 @@ A personal blogging application built with Node.js and Express that allows user 
    ```bash
    npm start
    ```
-   9. ## API Endpoints
+   9. ## Tech Stack
+      #### - Frontend
+
+      - React.js
+      - Bootstrap
+
+      #### - Backend
+
+      - Node.js 
+      - MongoDB
+      -
+      #### - Libraries/Packages
+
+      - Dotenv (for environment variables)
+      - npm (dependency management)
+
+
+   10. ## API Endpoints
 
 
    #### Authentication
@@ -100,7 +117,7 @@ A personal blogging application built with Node.js and Express that allows user 
     - Post bash /api/auth/login: Login an existing user.
 
 
-   10. #### Blog Posts
+   11. #### Blog Posts
 
     - GET /posts:Retrieve all blog posts.
     - GET /posts/singlePost/:postId: Retrieve a specific blog post by it's ID.
