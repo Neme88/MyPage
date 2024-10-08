@@ -27,9 +27,22 @@ A personal blogging application built with Node.js and Express that allows user 
       ```bash
       npm init -y
       ```
-   3. #### Install Dependecies:
+   3. #### List of Dependecies:
+      i. express: Fast web framework for Node.js
+      ii. Mongoose: Object modeling tool, designed to work in asynchtonous environment
+      iii. jsonwebtoken: JSON Web Token for Authentication, Authorization, Information Exchange, Statless session
+      iv. bcrytjs: Library for hashing passwords in Node.js
+      v. cors: Node.js middleware for Enabling CORS(Cross Origin Resourse Sharing)
+      vi. dotenv: Loads Environment variables from a .env file into process.env.
+
+   4. #### Install Dependecies:
       ```bash
-      express: npm intall express 
+      npm install express
+      npm install mongoose
+      npm install jsonwebtoken
+      npm install bcryptjs
+      npm install cors
+      npm install dotenv
       ```
 
 
