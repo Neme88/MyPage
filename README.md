@@ -102,7 +102,7 @@ A personal blogging application built with Node.js and Express that allows user 
 
       - Node.js 
       - MongoDB
-      -
+
       #### Libraries/Packages
 
       - Dotenv (for environment variables)
