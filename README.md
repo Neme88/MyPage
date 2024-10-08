@@ -94,11 +94,13 @@ A personal blogging application built with Node.js and Express that allows user 
    9. ## API Endpoints
 
     ### Authentication
+
     ```bash
     - Post bash /api/auth/register: Register a new user. 
     - Post bash /api/auth/login: Login an existing user.
-    ````
+    ```
    10. ### Blog Posts
+
       ```bash
     - GET /posts:Retrieve all blog posts.
     - GET /posts/singlePost/:postId: Retrieve a specific blog post by it's ID.
