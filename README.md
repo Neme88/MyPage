@@ -1,5 +1,19 @@
-MyPage Backend
-This repository contains the backend code for Mypage, a blogging application built with Node.js and Express.
+# Personal blogging platform
+A personal blogging application built with Node.js and Express that allows user to post, Read, update and Delete a blog.
+
+
+---
+
+## Setup Instructions
+
+
+---
+
+
+### Prerequisites
+- Node.js 
+
+
 
 Dependencies
 express: Fast, un-opinionated, minimalist web framework for Node.js.
