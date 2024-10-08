@@ -73,11 +73,14 @@ A personal blogging application built with Node.js and Express that allows user 
 
    7. #### Database Connection
    Ensure that you have a MongoDB URI for your database. You can use the following connection string in you `.env` file:
+   ```bash
    MONGODB_URI="mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<database>?retryWrites=true&w=majority":
+   ```
 
-
-   Replace
-   "<Username>, <password>, <cluster>, and <database>" with your actual MongoDB.
+   Replace:
+   ```bash
+   <Username>, <password>, <cluster>, and <database> with your actual MongoDB.
+   ```
 
    Example connection in the application:
    ```bash
