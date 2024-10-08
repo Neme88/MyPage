@@ -92,17 +92,18 @@ A personal blogging application built with Node.js and Express that allows user 
    npm start
    ```
    9. ## Tech Stack
-      #### - Frontend
+
+      #### Frontend
 
       - React.js
       - Bootstrap
 
-      #### - Backend
+      #### Backend
 
       - Node.js 
       - MongoDB
       -
-      #### - Libraries/Packages
+      #### Libraries/Packages
 
       - Dotenv (for environment variables)
       - npm (dependency management)
@@ -113,17 +114,17 @@ A personal blogging application built with Node.js and Express that allows user 
 
    #### Authentication
 
-    - Post bash /api/auth/register: Register a new user. 
-    - Post bash /api/auth/login: Login an existing user.
+   - Post bash /api/auth/register: Register a new user. 
+   - Post bash /api/auth/login: Login an existing user.
 
 
    11. #### Blog Posts
 
-    - GET /posts:Retrieve all blog posts.
-    - GET /posts/singlePost/:postId: Retrieve a specific blog post by it's ID.
-    - POST /posts/:create: Create a new blog post.
-    - PUT /posts/:id: Update an existing blog post by it's ID
-    - DELETE /posts/:id: Delete a blog by it's ID.
+   - GET /posts:Retrieve all blog posts.
+   - GET /posts/singlePost/:postId: Retrieve a specific blog post by it's ID.
+   - POST /posts/:create: Create a new blog post.
+   - PUT /posts/:id: Update an existing blog post by it's ID
+   - DELETE /posts/:id: Delete a blog by it's ID.
 
 
    ### Contributing.
