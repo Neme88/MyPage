@@ -44,6 +44,29 @@ A personal blogging application built with Node.js and Express that allows user 
       npm install cors
       npm install dotenv
       ```
+   5. #### Check the package.json File:
+   After installing these dependencies, they will be automatically added to the package.json file, under the " dependecies" section. It will look something like this:
+```bash
+  {
+
+   "name": "Mypage",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "script": {
+   "start": "node index.js"
+   },
+   "dependecies": {
+   "express": "^4.17.1",
+   "mongoose": "^5.11.15",
+   "jsonwebtoken": "^8.5.1",
+   "bcryptjs": "^2.4.3",
+   "cors": "^2.8.5",
+   "dotenv": "8.2.0"
+   }
+}
+
+```
 
 
 
