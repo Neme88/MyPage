@@ -94,7 +94,7 @@ A personal blogging application built with Node.js and Express that allows user 
    9. ## API Endpoints
 
 
-   ### Authentication
+   #### Authentication
 
     - Post bash /api/auth/register: Register a new user. 
     - Post bash /api/auth/login: Login an existing user.
