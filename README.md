@@ -23,6 +23,14 @@ A personal blogging application built with Node.js and Express that allows user 
       git clone https://github.com/Neme88/MyPage.git
       cd Mypage
       ```
+   2. #### Initialize the Project:
+      ```bash
+      npm init -y
+      ```
+   3. #### Install Dependecies:
+      ```bash
+      express: npm intall express 
+      ```
 
 
 
