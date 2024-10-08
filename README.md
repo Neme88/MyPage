@@ -86,7 +86,29 @@ A personal blogging application built with Node.js and Express that allows user 
    ```bash
    mongoose.connect("mongdb+srv://<your username>:<your password>@hostname.identifier for mongoDB cluster instance.mongodb.net/name of db?retryWrites=true&w=majority");
    ```
-License
+   8. #### Starting the server
+   To start the server, run the following command:
+   ```bash
+   npm start
+   ```
+   9. ## API Endpoints
+
+    ### Authentication
+    - Post ```bash /api/auth/register``: Register a new user. 
+    - Post ```bash /api/auth/login``: Login an existing user.
+   10. ### Blog Posts
+    - GET ```/posts``:Retrieve all blog posts.
+    - GET ```/posts/singlePost/:postId``: Retrieve a specific blog post by it's ID.
+    - POST ```/posts/:create``: Create a new blog post.
+    - PUT ```/posts/:id``: Update an existing blog post by it's ID
+    - DELETE ```/posts/:id``: Delete a blog by it's ID.
+
+
+   ### Contributing.
+   Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+
+   ### License. 
 This project is licensed under the MIT License.
 
 
