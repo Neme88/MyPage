@@ -143,9 +143,4 @@ This project is licensed under the MIT License.
 - **GitHub: https://github.com/Neme88**
 - **X: https://x.com/Neme_88**
 
-
-
-
-
-
 >>>>>>> a4befae4352bdb93d29aa7f8bd7407ef84eca687
