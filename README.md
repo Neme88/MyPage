@@ -134,3 +134,18 @@ A personal blogging application built with Node.js and Express that allows user 
    ### License. 
 This project is licensed under the MIT License.
 
+<<<<<<< HEAD
+=======
+### Author
+**Chinemerem .C.Nwaka**
+- **Email: ccnwaka1988@gmail.com**
+- **Linkedin: https://www.linkedin.com/in/Neme88/**
+- **GitHub: https://github.com/Neme88**
+- **X: https://x.com/Neme_88**
+
+
+
+
+
+
+>>>>>>> a4befae4352bdb93d29aa7f8bd7407ef84eca687
