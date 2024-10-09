@@ -134,8 +134,3 @@ A personal blogging application built with Node.js and Express that allows user 
    ### License. 
 This project is licensed under the MIT License.
 
-
-
-
-
-
